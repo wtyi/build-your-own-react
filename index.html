@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RRRRRRReact</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="element.js"></script>
+    <script src="index.js"></script>
+    <script>
+        render(TemplateElement,document.querySelector("#root"))
+        setTimeout(() => {
+            console.log("use")
+            render(nextTemplateElement,document.querySelector("#root"))
+        },5000)
+    </script>
+</body>
+</html>
