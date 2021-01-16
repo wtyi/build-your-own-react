@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRRRRRReact</title>
+    <title>Title</title>
 </head>
 <body>
+    <script src="./element.js"></script>
+    <script src="dom.js"></script>
+    <script src="render.js"></script>
+    <script src="fc.js"></script>
+    <script src="useState.js"></script>
     <div id="root"></div>
-    <script src="element.js"></script>
-    <script src="index.js"></script>
     <script>
-        render(TemplateElement,document.querySelector("#root"))
-        setTimeout(() => {
-            console.log("use")
-            render(nextTemplateElement,document.querySelector("#root"))
-        },5000)
+        render(CreateTestFuncElement("sb"),document.querySelector("#root"))
     </script>
 </body>
 </html>
